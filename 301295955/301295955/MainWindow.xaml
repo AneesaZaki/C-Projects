@@ -1,0 +1,57 @@
+﻿<Window x:Class="_301295955.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_301295955"
+        mc:Ignorable="d"
+        Title="eReader" Height="500" Width="500">
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <Label Grid.Row="0" Grid.Column="0" Content="Lab#2 - Amazon DynamoDB Service" VerticalAlignment="Center" Margin="0,0,5,0" FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Margin="0,30,0,0">
+            <Grid Width="291">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="User Name:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="UsernameTextBox" Margin="0,10,0,10" Height="28"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="Password:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <PasswordBox Grid.Row="1" Grid.Column="1" x:Name="PasswordBox" Margin="0,10,0,10" Height="28"/>
+                <Button x:Name="Login_btn"  Grid.Row="2" Grid.Column="1" Content="Login" HorizontalAlignment="Right" Margin="21,10,0,0" VerticalAlignment="Center" Height="35" Width="150" Background="HotPink" BorderBrush="Black" FontWeight="Bold" FontSize="16" Foreground="White" Click="Login_btn_Click" />
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" VerticalAlignment="Bottom">
+            <!-- Status Bar -->
+            <StatusBar Width="500" Background="HotPink">
+                <StackPanel>
+                    <StatusBarItem FontSize="14" Foreground="White" FontWeight="Bold" Width="200" Margin="5,0,0,0">Ghutai Zaki || 301295955 </StatusBarItem>
+                </StackPanel>
+
+
+            </StatusBar>
+        </StackPanel>
+
+    </Grid>
+</Window>
+
